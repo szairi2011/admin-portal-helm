@@ -1,6 +1,36 @@
 # admin-portal-helm
 Holds the required Helm chart packaged artifacts for the admin web portal 
 
+## Usage
+
+[Helm](https://helm.sh) must be installed to use the charts.  Please refer to
+Helm's [documentation](https://helm.sh/docs) to get started.
+
+Once Helm has been set up correctly, add the repo as follows:
+
+```
+
+  helm repo add admin-portal https://szairi2011.github.io/admin-portal-helm/
+```
+
+If you had already added this repo earlier, run `helm repo update` to retrieve
+the latest versions of the packages.  You can then run `helm search repo admin-portal` to see the charts.
+
+To install the admin-portal chart:
+
+```
+    helm install my-admin-portal admin-portal/admin-portal
+```
+
+To uninstall the chart:
+
+```
+    helm delete my-admin-portal
+```
+
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/szairi2011/admin-portal-helm/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
